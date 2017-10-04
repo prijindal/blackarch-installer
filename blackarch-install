@@ -1876,7 +1876,7 @@ dump_live_iso()
     for d in ${live_dirs}
     do
         wprintf "[+] Installing ${d}, please wait ... "
-        cp -aRp ${d} ${CHROOT}
+        cp -agRp ${d} ${CHROOT}
         wprintf "done\n"
     done
 
